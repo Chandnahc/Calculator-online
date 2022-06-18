@@ -1,0 +1,108 @@
+
+
+*{
+    margin: 0%;
+}
+.container{
+    background-color: rgb(85, 135, 228);
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+}
+
+.calculator{
+    background-color: rgb(230, 237, 253);
+    height: 70vh;
+    width: 30vw;
+    margin: auto;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+
+.div1,.div2,.div3,.div4,.div5,.div6{
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 6px;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.div1{
+    margin-bottom: 10px;
+    height: 20%;
+    display: inline-block;
+    overflow: hidden;
+}
+.div1>#screen {
+    height: 50%;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    border: none;
+    padding-bottom: 0px;
+    resize: none;
+    color:cornflowerblue;
+    text-align: start;
+    font-size: 20px;
+    cursor: pointer !important;
+}
+.div1>#answer {
+    height: 45%;
+    width: 100%;
+    border-radius: 0px 0px 15px 15px;
+    border: none;
+    padding-top: 0px;
+    resize: none;
+    cursor: text;
+    color:cornflowerblue;
+    text-align: end;
+    font-size: 20px;
+    
+}
+
+textarea{
+    outline: none;
+    box-sizing: border-box;
+}
+
+.div2{
+    height: 10%;
+    column-count: 5;
+    
+}
+
+.div3,.div4,.div5,.div6{
+    height: 15%;
+    column-count: 5;
+}
+.div6>.enter{
+    width: 43rem !important;
+    border-radius: 10px;
+    color: rgb(228, 240, 250) !important;
+}
+
+.div6>button{
+    width: 20rem;
+}
+
+button{
+    font-size: 150%;
+    letter-spacing: 1px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(85, 135, 228,.7);
+    height: 100%;
+    width: 100%;
+    border: hidden;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+button:hover{
+    opacity: .7;
+}
+

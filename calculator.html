@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="div1">
+                <textarea readonly name="screen" id="screen" cols="50" rows="3" placeholder="Expression"> </textarea>
+                <textarea readonly name="answer" id="answer" cols="50" rows="2" placeholder="0" ></textarea>
+            </div>
+            <div class="div2">
+                <button class="openbra" onclick="add('(')">(</button>
+                <button class="closebra" onclick="add(')');">)</button>
+                <button class="ans" onclick="perform('answer');">ans</button>
+                <button class="del" onclick="perform('del');">del</button>
+                <button class="clear" onclick="perform('clear');">clear</button>
+            </div>
+            <div class="div3">
+                <button class="seven" onclick="add('7');">7</button>
+                <button class="eight" onclick="add('8');">8</button>
+                <button class="nine" onclick="add('9');">9</button>
+                <button class="percent" onclick="add('%');">%</button>
+                <button class="root" onclick="add('&Sqrt;');">&Sqrt;</button>
+            </div>
+            <div class="div4">
+                <button class="four" onclick="add('4');">4</button>
+                <button class="five" onclick="add('5');">5</button>
+                <button class="six" onclick="add('6');">6</button>
+                <button class="mul" onclick="add('&times;');">&times;</button>
+                <button class="divide" onclick="add('&div;');">&div;</button>
+    
+            </div>
+            <div class="div5">
+                <button class="one" onclick="add('1');">1</button>
+                <button class="two" onclick="add('2');">2</button>
+                <button class="three" onclick="add('3');">3</button>
+                <button class="add" onclick="add('+');">+</button>
+                <button class="sub" onclick="add('-');">-</button>
+            </div>
+            <div class="div6">
+                <button class="decimal" onclick="add('.');">.</button>
+                <button class="zero" onclick="add('0');">0</button>
+                <button class="plusminus" onclick="add('&plusmin;')">&plusmn;</button>
+                <button class="enter" onclick="perform('enter');">ENTER</button>
+            </div>
+
+           
+
+        </div>
+    </div>
+    <script src="./manager.js"></script>
+</body>
+
+</html>
